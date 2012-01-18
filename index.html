@@ -1,229 +1,643 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>CSS Newbie Example: Tabbed Box Using jQuery</title>
-<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-	$(window).resize(function() {  
-		fullHeight = $(window).height();
-		headerHeight = $("#header").outerHeight();
-		footerHeight = $("#footer").outerHeight();
-		$("iframe.example, div.source").height((fullHeight-headerHeight-footerHeight-50)+"px");
-	});
-});
-$(window).load(function() {
-	$(window).resize();
-});
-function iframe_loaded() {
-	$("a",$("iframe.example")[0].contentWindow.document).attr("target","_top");
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+<div style="width:500px; float:center; background:101010;">
 <style>
-html {
-	font: 62.5%/1.4 Arial, Helvetica, sans-serif; }
-body {
-	font-size: 1.3em;
-	padding: 0 10px;
-	background-color: #b0e6ff; }
-#header, #footer {
-	width: 960px;
-	margin: 0 auto; }
-#header {
-	background: transparent url(/img/cssnewbie_v2_logo.png) no-repeat 10px 5px; }
-#header p {
-	font-size: 150%; }
-h1, div.source {
-	font-family: "Courier New", Courier, monospace; }
-h1 {
-	margin: 0; }
-h1 a {
-	display: block;
-	width: 300px;
-	text-decoration: none;
-	margin: 0;
-	padding: 52px 0 25px 215px;
-	color: #253c93; }
-h1 span {
-	display: none; }
-h2 {
-	margin: 0; }
-h2 a {
-	font-size: 70%; }
-a {
-	color: #253c93; }
-.example, .source {
-	float: left; }
-.example {
-	width: 58%; }
-.source {
-	width: 40%; }
-iframe.example,div.source {
-	height: 500px;
-	border: 1px solid #ccc;
-	background-color: #fff; }
-div.source {
-	border-left: 0px none;
-	padding: 0 0 0 1%;
-	overflow: auto; }
-div.source pre {
-	white-space: pre-wrap;
-	font-size: 12px; }
-#footer {
- clear: both;
- min-height: 125px;
- text-align: center;
- padding-top: 1px; }
-#footer p {
-	font-size: 140%;
-	line-height: 1.2;
-	margin: .5em 0;}
-#footer a {
-	float: left;
-	margin: .5em 1em 0 0; }
-#bsap_1239784 {
-	margin: .5em 0; }
+#cinematickets {list-style:none; margin:0; padding:0}
+#cinematickets img {margin-right:0px; position:absolute; top:25px; right:0}
+#cinematickets li {margin-bottom:20px; position:relative}
+#cinematickets .filmTimes {margin:0; padding:0; min-height:150px}
+#cinematickets .filmTimes li {clear:none; margin-bottom:8px}
+#cinematickets ul {list-style:none; clear:left;}
+#cinematickets h5 {font-size:1.4em; margin:0 0 10px 0;}
+#cinematickets .readMore {display:none;}
 </style>
-</head>
-<body>
-<!-- BuySellAds.com Ad Code -->
-<script type="text/javascript">
-(function(){
-  var bsa = document.createElement('script');
-     bsa.type = 'text/javascript';
-     bsa.async = true;
-     bsa.src = '//s3.buysellads.com/ac/bsa.js';
-  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-})();
-</script>
-<!-- END BuySellAds.com Ad Code -->
-<div id="header">
-	<h1><a href="http://www.cssnewbie.com/"><span>CSS Newbie</span> &lt;example /&gt;</a></h1>
+<ul id="cinematickets"><!-- ADMIT-ONE Start -->
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25832">12:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25831">2:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25833">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25834">7:00pm</a>
+</li>
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25836">12:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25835">2:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25837">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25838">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26055">6:15pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26056">6:15pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26384">6:20pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26159">12:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26158">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26157">4:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26156">6:20pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26364">12:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26363">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26362">4:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26361">6:20pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26398">6:20pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26410">6:20pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26422">6:20pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26434">6:20pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7206">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7206.jpg" alt="Arthur Christmas 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7206">Arthur Christmas 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>97 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26138">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26139">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26140">4:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26367">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26368">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26369">4:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7206" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7328.jpg" alt="Goon">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
+      <span class='cert'>16</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26007">8:30pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26044">8:30pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26382">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26383">10:45pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26145">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26154">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26155">10:45pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26350">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26359">8:20pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26397">8:20pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26409">8:20pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26421">8:20pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26433">8:20pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7119.jpg" alt="Happy Feet Two 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">Happy Feet Two 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26134">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26135">2:30pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26341">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26342">2:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7119" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26016">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26017">8:30pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26051">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26052">8:30pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26379">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26380">11:00pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26149">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26150">11:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26353">8:50pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26396">8:50pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26408">8:50pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26420">8:50pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26432">8:50pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/6983.jpg" alt="Hugo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">Hugo 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26147">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26146">2:30pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26352">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26351">2:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6983" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7365.jpg" alt="Man on a Ledge">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>102 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 03 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25856">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25859">11:10pm</a>
+</li>
+<li><span class="dateName">Saturday 04 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25857">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25858">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25860">11:10pm</a>
+</li>
+<li><span class="dateName">Sunday 05 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25861">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25862">8:50pm</a>
+</li>
+<li><span class="dateName">Monday 06 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25864">8:50pm</a>
+</li>
+<li><span class="dateName">Tuesday 07 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25865">8:50pm</a>
+</li>
+<li><span class="dateName">Wednesday 08 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25866">8:50pm</a>
+</li>
+<li><span class="dateName">Thursday 09 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=25867">8:50pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26018">8:20pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26049">8:20pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26381">6:00pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26267">6:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26358">6:00pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26395">6:00pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26407">6:00pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26419">6:00pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26431">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7120">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7120.jpg" alt="New Year's Eve">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7120">New Year's Eve</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26013">6:20pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26050">6:20pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7120" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26010">6:00pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26047">6:00pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26388">6:00pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26153">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26152">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26151">4:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26357">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26356">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26355">4:00pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26391">6:00pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26403">6:00pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26415">6:00pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26427">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26009">6:55pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26042">7:00pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26378">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26387">11:10pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26144">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26141">11:10pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26349">9:00pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26394">9:00pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26406">9:00pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26418">9:00pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26430">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7327">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7327.jpg" alt="The Darkest Hour">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7327">The Darkest Hour</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26005">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26004">9:00pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26045">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26041">9:05pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26377">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26376">11:20pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26143">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26142">11:20pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26348">7:00pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26393">7:00pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26405">7:00pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26417">7:00pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26429">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7327" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26011">8:10pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26048">8:10pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 18 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26040">8:45pm</a>
+</li>
+<li><span class="dateName">Thursday 19 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26046">8:45pm</a>
+</li>
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26386">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26385">8:30pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26137">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26136">8:30pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26366">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26365">8:30pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26400">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26399">8:30pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26412">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26411">8:30pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26424">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26423">8:30pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26436">6:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26435">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26372">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26373">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26371">11:00pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26133">4:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26131">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26132">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26130">11:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26340">4:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26338">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26339">8:45pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26389">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26390">8:45pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26401">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26402">8:45pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26413">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26414">8:45pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26425">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26426">8:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+      
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com//filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 20 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26375">8:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26374">11:00pm</a>
+</li>
+<li><span class="dateName">Saturday 21 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26271">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26270">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26269">8:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26336">11:00pm</a>
+</li>
+<li><span class="dateName">Sunday 22 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26345">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26346">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26344">8:00pm</a>
+</li>
+<li><span class="dateName">Monday 23 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26392">8:00pm</a>
+</li>
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26404">8:00pm</a>
+</li>
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26416">8:00pm</a>
+</li>
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26428">8:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+<!-- ADMIT-ONE End -->
+</ul>	
+
 </div>
-<div id="content">
-	<h2 class="example title">Live Example: </h2>
-	<h2 class="source title">Source Code: <a href="/example/tabbed-box/?source" id="save-source">(Save the Source)</a></h2>
-	<iframe src="/example_files/tabbed-box/" class="example" onload="iframe_loaded()"></iframe>
-	<div class="source"><pre>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
-&lt;title&gt;CSS Newbie Example: Tabbed Box Using jQuery&lt;/title&gt;
-&lt;style&gt;
-   * { margin: 0; padding: 0; }
-   body {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 62.5%; }
-   p { margin: 1em 0; }
-   #wrap {
-      width: 500px;
-      font-size: 1.2em;
-      margin: 3em auto; }
-   .tabbed-box {
-      width: 302px;
-      background: #fff url(tabbed-body-bg.jpg) repeat-x bottom;
-      border: 1px solid #ddd; }
-   .tabbed-box .tabs li {
-      list-style: none;
-      float: left; }
-   .tabbed-box .tabs li a {
-      display: block;
-      width: 100px;
-      padding: 5px 0;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      color: #888;
-      background: #fff url(tabbed-tab-bg.jpg) repeat-x bottom; 
-      border-left: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;}
-   .tabbed-box .tabs li:first-child a {
-      border-left: none; }
-   .tabbed-box .tabs li a:hover {
-      color: #333; }
-   .tabbed-box .tabs li a:focus {
-      outline: none; }
-   .tabbed-box .tabs li a.active {
-      background: #fff;
-      color: #333;
-      border-bottom: 1px solid #fff; }
-   .tabbed-content {
-      padding: 3em 1em 1em 1em;
-      display: none; }
-&lt;/style&gt;
-&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;../../js/jquery/jquery.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-var currentTab = 0; // Set to a different number to start on a different tab.
-
-function openTab(clickedTab) {
-   var thisTab = $(&quot;.tabbed-box .tabs a&quot;).index(clickedTab);
-   $(&quot;.tabbed-box .tabs li a&quot;).removeClass(&quot;active&quot;);
-   $(&quot;.tabbed-box .tabs li a:eq(&quot;+thisTab+&quot;)&quot;).addClass(&quot;active&quot;);
-   $(&quot;.tabbed-box .tabbed-content&quot;).hide();
-   $(&quot;.tabbed-box .tabbed-content:eq(&quot;+thisTab+&quot;)&quot;).show();
-   currentTab = thisTab;
-}
-
-$(document).ready(function() {
-   $(&quot;.tabs li:eq(0) a&quot;).css(&quot;border-left&quot;, &quot;none&quot;);
-   
-   $(&quot;.tabbed-box .tabs li a&quot;).click(function() { 
-      openTab($(this)); return false; 
-   });
-   
-   $(&quot;.tabbed-box .tabs li a:eq(&quot;+currentTab+&quot;)&quot;).click()
-});
-&lt;/script&gt;
-
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;wrap&quot;&gt;
-   &lt;div class=&quot;tabbed-box&quot;&gt;
-      &lt;ul class=&quot;tabs&quot;&gt;
-         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Reader Faves&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Rob&amp;rsquo;s Faves&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS Primer&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div class=&quot;tabbed-content&quot;&gt;
-         &lt;p&gt;Here's my content for tab 1&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 1&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 1&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;tabbed-content&quot;&gt;
-         &lt;p&gt;Here's my content for tab 2&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 2&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 2&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 2&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;tabbed-content&quot;&gt;
-         &lt;p&gt;Here's my content for tab 3&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 3&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 3&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 3&lt;/p&gt;
-         &lt;p&gt;Here's my content for tab 3&lt;/p&gt;
-       &lt;/div&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;/body&gt;
-&lt;/html&gt;</pre></div>
-</div>
-<div id="footer">
-	<!-- BuySellAds.com Zone Code -->
-	<div id="bsap_1239784" class="bsarocks bsap_3de9dd67d1e9d49a7cec8c1a10bdb917"></div>
-	<!-- END BuySellAds.com Zone Code -->
-</div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-2285776-3");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-
 </body>
 </html>
