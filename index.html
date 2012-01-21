@@ -16,7 +16,7 @@
 #cinematickets li {margin-bottom:20px; position:relative}
 #cinematickets .filmTimes {margin:0; padding:0; min-height:150px}
 #cinematickets .filmTimes li {clear:none; margin-bottom:8px}
-#cinematickets .datename          {font-weight:bold}
+#cinematickets .datename {font-weight:bold}
 #cinematickets ul {list-style:none; clear:left;}
 #cinematickets h5 {font-size:1.4em; margin:0 0 10px 0;}
 #cinematickets .readMore {display:none;}
@@ -27,13 +27,13 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script><br />
 <script type="text/javascript">
-function changedate(newdate) {
+function changedate(sun22jan) {
      $('div[name|="dates"]').each(function(index) {
           if ($(this).attr("id") == newdate) {
-               $(this).style.display = "";
+               $(this).show(200)
           }
           else {
-               $(this).style.display = "none";
+               $(this).hide(600);
           }
      });
 }
