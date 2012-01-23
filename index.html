@@ -25,37 +25,56 @@ function choosedate(thisdate) {
 <body>
 
 <style>
-#cinematickets {list-style:none; margin:0; padding:0}
-#cinematickets img {margin-right:0px; position:absolute; top:25px; right:0}
-#cinematickets li {margin-bottom:20px; position:relative}
-#cinematickets .filmTimes {margin:0; padding:0; min-height:150px}
-#cinematickets .filmTimes li {clear:none; margin-bottom:8px}
-#cinematickets .datename {font-weight:bold}
-#cinematickets ul {list-style:none; clear:left;}
-#cinematickets h5 {font-size:1.4em; margin:0 0 10px 0;}
-#cinematickets .readMore {display:none;}
+#cinematickets 	{list-style:none; margin:0; padding:0}
+#cinematickets 	img {margin-right:0px; position:absolute; top:25px; right:0}
+#cinematickets 	li {margin-bottom:20px; position:relative}
+#cinematickets 	.filmTimes {margin:0; padding:0; min-height:150px}
+#cinematickets 	.filmTimes li {clear:none; margin-bottom:8px}
+#cinematickets 	.dateName {font-weight:bold}
+#cinematickets 	ul {list-style:none; clear:left;}
+#cinematickets 	h5 {font-size:1.4em; margin:0 0 10px 0;}
+#cinematickets 	.readMore {display:none;}
+.dates 		{
+     		-moz-border-radius: 10px;
+    		-webkit-border-radius: 10px;
+   	 	-khtml-border-radius: 10px;
+	    	border-radius: 10px;
+		border: 1px solid red;
+		padding: 5px;
+		width: 50px;
+		text-align: center;
+		}
+.dates a:link 	{
+ 		color: #ff0000;
+ 		text-decoration: none;
+		}
+
+.dates a:hover 	{
+ 		color: #0000ff;
+		text-decoration: underline;
+ 		}
 </style>
 
 <table>
 	<tr>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab0" href="javascript:choosedate('Mon-23-Jan');" >Jan<br/>Mon<br/>23</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab1" href="javascript:choosedate('Tue-24-Jan');" >Jan<br/>Tue<br/>24</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab2" href="javascript:choosedate('Wed-25-Jan');" >Jan<br/>Wed<br/>25</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab3" href="javascript:choosedate('Thu-26-Jan');" >Jan<br/>Thu<br/>26</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab4" href="javascript:choosedate('Fri-27-Jan');" >Jan<br/>Fri<br/>27</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab5" href="javascript:choosedate('Sat-28-Jan');" >Jan<br/>Sat<br/>28</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab6" href="javascript:choosedate('Sun-29-Jan');" >Jan<br/>Sun<br/>29</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab7" href="javascript:choosedate('Mon-30-Jan');" >Jan<br/>Mon<br/>30</a>          </div> 	</td> 	</tr> 	<tr>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab8" href="javascript:choosedate('Tue-31-Jan');" >Jan<br/>Tue<br/>31</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab9" href="javascript:choosedate('Wed-01-Feb');" >Feb<br/>Wed<br/>01</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab10" href="javascript:choosedate('Thu-02-Feb');" >Feb<br/>Thu<br/>02</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab11" href="javascript:choosedate('Fri-03-Feb');" >Feb<br/>Fri<br/>03</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab12" href="javascript:choosedate('Sat-04-Feb');" >Feb<br/>Sat<br/>04</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab13" href="javascript:choosedate('Sun-05-Feb');" >Feb<br/>Sun<br/>05</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab14" href="javascript:choosedate('Mon-06-Feb');" >Feb<br/>Mon<br/>06</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab15" href="javascript:choosedate('Tue-07-Feb');" >Feb<br/>Tue<br/>07</a>          </div> 	</td> 	</tr> 	<tr>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab16" href="javascript:choosedate('Wed-08-Feb');" >Feb<br/>Wed<br/>08</a>          </div> 	</td>
-	<td>           <div style="border: 1px solid blue; background-color: #99CCFF; padding: 5px; width: 50px; text-align: center;">             <a id="datetab17" href="javascript:choosedate('Thu-09-Feb');" >Feb<br/>Thu<br/>09</a>          </div> 	</td>
+	<td>           <div class="dates">             <a id="datetab0" href="javascript:choosedate('Mon-23-Jan');" >Jan<br/>23<br/>Mon<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab1" href="javascript:choosedate('Tue-24-Jan');" >Jan<br/>24<br/>Tue<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab2" href="javascript:choosedate('Wed-25-Jan');" >Jan<br/>25<br/>Wed<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab3" href="javascript:choosedate('Thu-26-Jan');" >Jan<br/>26<br/>Thu<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab4" href="javascript:choosedate('Fri-27-Jan');" >Jan<br/>27<br/>Fri<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab5" href="javascript:choosedate('Sat-28-Jan');" >Jan<br/>28<br/>Sat<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab6" href="javascript:choosedate('Sun-29-Jan');" >Jan<br/>29<br/>Sun<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab7" href="javascript:choosedate('Mon-30-Jan');" >Jan<br/>30<br/>Mon
+	<td>           <div class="dates">             <a id="datetab8" href="javascript:choosedate('Tue-31-Jan');" >Jan<br/>31<br/>Tue<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab9" href="javascript:choosedate('Wed-01-Feb');" >Feb<br/>01<br/>Wed<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab10" href="javascript:choosedate('Thu-02-Feb');" >Feb<br/>02<br/>Thu<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab11" href="javascript:choosedate('Fri-03-Feb');" >Feb<br/>03<br/>Fri<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab12" href="javascript:choosedate('Sat-04-Feb');" >Feb<br/>04<br/>Sat<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab13" href="javascript:choosedate('Sun-05-Feb');" >Feb<br/>05<br/>Sun<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab14" href="javascript:choosedate('Mon-06-Feb');" >Feb<br/>06<br/>Mon<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab15" href="javascript:choosedate('Tue-07-Feb');" >Feb<br/>07<br/>Tue
+	<td>           <div class="dates">             <a id="datetab16" href="javascript:choosedate('Wed-08-Feb');" >Feb<br/>08<br/>Wed<br/><strong><font size="5">
+	<td>           <div class="dates">             <a id="datetab17" href="javascript:choosedate('Thu-09-Feb');" >Feb<br/>09<br/>Thu<br/><strong><font size="5">
 	</tr>
 </table>
 <div name="films" id="Mon-23-Jan" style="width: 550px; display: none;"><ul id="cinematickets">
@@ -860,7 +879,7 @@ function choosedate(thisdate) {
 <li><span class="dateName">Friday 27 Jan</span>
 <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26471">6:45pm</a>
 <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26470">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26466">10:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26466">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
@@ -1103,7 +1122,7 @@ function choosedate(thisdate) {
 <li><span class="dateName">Saturday 28 Jan</span>
 <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26439">6:45pm</a>
 <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26437">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26438">10:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26438">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
