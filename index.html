@@ -1,3 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<script type="text/javascript" src="http://resources.thefilmdb.co.uk/js/jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+var left=0;
+var right=7;
+
+function choosedate(thisdate) {
+     $('div[name|="films"]').each(function(index) {
+          if ($(this).attr("id") == thisdate) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
+}
+
+function movedaysright() 	{
+				if(right < 
+0
 )
 					{
 					var cDays1 = 'date'+left;
@@ -100,6 +127,7 @@ function movedaysleft() 	{
 <td name="date14" id="date1414" class="dates">             <a id="datetab14" href="javascript:choosedate('Tue-07-Feb');" >Feb<br/><strong><font size="5">7<sup>th</sup></font></strong><br/>Tue
 <td name="date15" id="date1515" class="dates">             <a id="datetab15" href="javascript:choosedate('Wed-08-Feb');" >Feb<br/><strong><font size="5">8<sup>th</sup></font></strong><br/>Wed
 <td name="date16" id="date1616" class="dates">             <a id="datetab16" href="javascript:choosedate('Thu-09-Feb');" >Feb<br/><strong><font size="5">9<sup>th</sup></font></strong><br/>Thu
+	<td>		<div name = "right">	<a href="javascript:movedaysright();" ><img src="http://img718.imageshack.us/img718/7069/rightarrowy.png"></a>          </div> 	</td>	
 	</tr>
 </table>
 <div name="films" id="Tue-24-Jan" style="width: 550px; display: none;"><ul id="cinematickets">
