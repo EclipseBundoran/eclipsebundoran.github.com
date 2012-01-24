@@ -1,0 +1,2194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<!--Scripting and code provided by Paul Burke based on html code for film times provided by Admit-One-->
+
+<script type="text/javascript" src="http://resources.thefilmdb.co.uk/js/jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+var left=0;
+var right=6;
+
+function choosedate(thisdate) {
+     $('div[name|="films"]').each(function(index) {
+          if ($(this).attr("id") == thisdate) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
+}
+
+function movedaysright() 	{
+				if(right < 
+9
+)
+					{
+					var cDays1 = 'date'+left;
+					var cDays2 = 'date'+right;
+	
+					document.getElementById(cDays1).style.display = 'none';
+					document.getElementById(cDays2).style.display = 'table-cell';
+	
+					left = left + 1;
+					right = right + 1;
+					}
+
+				else
+					{
+					var cDays1 = 'date'+left;
+					var cDays2 = 'date'+right;
+					document.getElementById(cDays1).style.display = 'none';
+					document.getElementById(cDays2).style.display = 'table-cell';
+					}
+
+				}
+
+function movedaysleft() 	{
+				if(left > 0)
+					{
+					var cDays1 = 'date'+left;
+					var cDays2 = 'date'+right;
+					document.getElementById(cDays1).style.display = 'table-cell';
+					document.getElementById(cDays2).style.display = 'none';
+					left = left - 1;
+					right = right - 1;
+					}
+				else
+					{
+					var cDays1 = 'date'+left;
+					var cDays2 = 'date'+right;
+	
+					document.getElementById(cDays1).style.display = 'table-cell';
+					document.getElementById(cDays2).style.display = 'none';
+					}
+				}
+
+
+
+</script>
+
+   
+</head>
+
+<body>
+
+<style>
+#cinematickets 	{list-style:none; margin:0; padding:0}
+#cinematickets 	img {margin-right:0px; position:absolute; top:25px; right:0}
+#cinematickets 	li {margin-bottom:20px; position:relative}
+#cinematickets 	.filmTimes {margin:0; padding:0; min-height:150px}
+#cinematickets 	.filmTimes li {clear:none; margin-bottom:8px}
+#cinematickets 	.dateName {font-weight:bold}
+#cinematickets 	ul {list-style:none; clear:left;}
+#cinematickets 	h5 {font-size:1.4em; margin:0 0 10px 0;}
+#cinematickets 	.readMore {display:none;}
+.dates 		{
+     		-moz-border-radius: 10px;
+    		-webkit-border-radius: 10px;
+   	 	-khtml-border-radius: 10px;
+	    	border-radius: 10px;
+		border: 1px solid red;
+		padding: 5px;
+		width: 50px;
+		text-align: center;
+		}
+.dates a:link 	{
+ 		color: #ff0000;
+ 		text-decoration: none;
+		}
+
+.dates a:hover 	{
+ 		color: #0000ff;
+		text-decoration: underline;
+ 		}
+</style>
+
+<table>
+	<tr>
+	<td>		<div name = "left">	<a href="javascript:movedaysleft();" ><img src="http://img37.imageshack.us/img37/5295/leftarrowy.png"></a>          </div> 	</td>
+<td name="date0" id="date0" style="display: table-cell;">           <div id="day0" class="dates">             <a id="datetab0" href="javascript:choosedate('Tue-24-Jan');" >Jan<br/><strong><font size="5">24<sup>th</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date1" id="date1" style="display: table-cell;">           <div id="day1" class="dates">             <a id="datetab1" href="javascript:choosedate('Wed-25-Jan');" >Jan<br/><strong><font size="5">25<sup>th</sup></font></strong><br/>Wed</a>          </div> 	</td>
+<td name="date2" id="date2" style="display: table-cell;">           <div id="day2" class="dates">             <a id="datetab2" href="javascript:choosedate('Thu-26-Jan');" >Jan<br/><strong><font size="5">26<sup>th</sup></font></strong><br/>Thu</a>          </div> 	</td>
+<td name="date3" id="date3" style="display: table-cell;">           <div id="day3" class="dates">             <a id="datetab3" href="javascript:choosedate('Fri-27-Jan');" >Jan<br/><strong><font size="5">27<sup>th</sup></font></strong><br/>Fri</a>          </div> 	</td>
+<td name="date4" id="date4" style="display: table-cell;">           <div id="day4" class="dates">             <a id="datetab4" href="javascript:choosedate('Sat-28-Jan');" >Jan<br/><strong><font size="5">28<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
+<td name="date5" id="date5" style="display: table-cell;">           <div id="day5" class="dates">             <a id="datetab5" href="javascript:choosedate('Sun-29-Jan');" >Jan<br/><strong><font size="5">29<sup>th</sup></font></strong><br/>Sun</a>          </div> 	</td>
+<td name="date6" id="date6" style="display: none;">           <div id="day6" class="dates">             <a id="datetab6" href="javascript:choosedate('Mon-30-Jan');" >Jan<br/><strong><font size="5">30<sup>th</sup></font></strong><br/>Mon</a>          </div> 	</td>
+<td name="date7" id="date7" style="display: none;">           <div id="day7" class="dates">             <a id="datetab7" href="javascript:choosedate('Tue-31-Jan');" >Jan<br/><strong><font size="5">31<sup>st</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date8" id="date8" style="display: none;">           <div id="day8" class="dates">             <a id="datetab8" href="javascript:choosedate('Wed-01-Feb');" >Feb<br/><strong><font size="5">1<sup>st</sup></font></strong><br/>Wed</a>          </div> 	</td>
+<td name="date9" id="date9" style="display: none;">           <div id="day9" class="dates">             <a id="datetab9" href="javascript:choosedate('Thu-02-Feb');" >Feb<br/><strong><font size="5">2<sup>nd</sup></font></strong><br/>Thu</a>          </div> 	</td>
+	<td>		<div name = "right">	<a href="javascript:movedaysright();" ><img src="http://img718.imageshack.us/img718/7069/rightarrowy.png"></a>          </div> 	</td>	
+	</tr>
+</table>
+<div name="films" id="Tue-24-Jan" style="width: 500px; display: block;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25223">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">Goon</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25224">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25233">4:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25222">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7156.jpg" alt="Hugo 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">Hugo 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25234">4:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7156" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25227">3:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25220">9:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25221">4:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25226">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7444">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7444.jpg" alt="The Darkest Hour 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7444">The Darkest Hour 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25235">7:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7444" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25219">6:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25228">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25229">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25230">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25225">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25236">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 24 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25231">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25232">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Wed-25-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">Goon</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25240">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25239">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25238">9:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25242">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25237">6:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25243">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25244">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25241">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25248">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 25 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25245">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25246">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Thu-26-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7328">Goon</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25252">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25251">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25250">9:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25254">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7444">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7444.jpg" alt="The Darkest Hour 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7444">The Darkest Hour 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25259">7:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7444" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25249">6:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25255">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25256">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25253">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25260">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 26 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25257">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25258">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Fri-27-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25362">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25358">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25345">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25349">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25346">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25353">4:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25367">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25351">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25352">4:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25344">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25371">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25368">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25365">7:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25364">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25369">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25359">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25354">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25355">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Sat-28-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25290">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25291">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25289">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25287">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25274">12:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25276">2:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25275">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7119">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" alt="Happy Feet Two 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7119">Happy Feet Two 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25286">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7119" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25279">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6983">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" alt="Hugo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6983">Hugo 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25294">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6983" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7156.jpg" alt="Hugo 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">Hugo 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25301">1:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7156" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25277">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25284">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25285">4:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7236">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7236.jpg" alt="Puss in Boots 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7236">Puss in Boots 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25299">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7236" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25296">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25314">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25278">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25280">4:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25273">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25300">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25297">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25293">7:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25292">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25298">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25288">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Saturday 28 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25281">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25283">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25282">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Sun-29-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25332">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25333">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25331">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25329">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25318">12:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25334">2:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25316">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7119">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" alt="Happy Feet Two 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7119">Happy Feet Two 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25328">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7119" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25320">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6983">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" alt="Hugo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6983">Hugo 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25337">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6983" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7156.jpg" alt="Hugo 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7156">Hugo 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>125 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25343">1:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7156" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25317">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25327">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25324">4:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7236">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7236.jpg" alt="Puss in Boots 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7236">Puss in Boots 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25341">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7236" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25338">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25319">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25322">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25323">4:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25315">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25342">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25339">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25336">7:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25335">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25340">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25330">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25321">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25325">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25326">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Mon-30-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25379">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25375">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25374">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25376">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25373">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25383">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25382">7:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25381">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25384">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25380">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25377">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25378">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Tue-31-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25396">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25394">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25386">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25388">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25387">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25391">4:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>128 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25399">4:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25389">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7122.jpg" alt="The Girl With the Dragon Tattoo">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7122">The Girl With the Dragon Tattoo</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>157 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25390">4:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7122" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25385">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25402">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25400">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25398">7:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25397">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25401">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25395">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25392">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25393">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Wed-01-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25308">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7485">Chronicle</a>
+      <span class='cert'>TBC</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25311">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25304">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25303">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25305">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25302">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25312">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25310">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25313">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25309">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25306">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25307">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Thu-02-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7480.jpg" alt="A Monster in Paris 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7480">A Monster in Paris 3D</a>
+      <span class='cert'>U</span> 
+      <span class='runtime'>89 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25409">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7480" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7485">Chronicle</a>
+      <span class='cert'>TBC</span> 
+      <span class='runtime'>100 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25412">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7339">Haywire</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>92 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25405">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7123.jpg" alt="Mission Impossible  Ghost Protocol">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7123">Mission Impossible  Ghost Protocol</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>133 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25404">6:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7123" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7353.jpg" alt="The Descendants">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7353">The Descendants</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>111 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25406">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7354">The Grey</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>117 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25403">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7324">The Iron Lady</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>104 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25413">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7401">The Sitter</a>
+      <span class='cert'>15</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25411">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7337.jpg" alt="Underworld Awakening 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7337">Underworld Awakening 3D</a>
+      <span class='cert'>18</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25410">9:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7337" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=details&eventCode=7329">War Horse</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>146 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Feb</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25407">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEDP&p=tickets&perfCode=25408">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+</body>
+</html>
