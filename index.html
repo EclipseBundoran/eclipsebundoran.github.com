@@ -23,9 +23,7 @@ function movedaysright() 	{
 					var cDays2 = 'date'+right;
 
 					document.getElementById(cDays1).style.display = 'none';
-					document.getElementById(cDays2).style.display = 'table-
-
-cell';
+					document.getElementById(cDays2).style.display = 'table-cell';
 
 					left = left + 1;
 					right = right + 1;
@@ -36,9 +34,7 @@ cell';
 					var cDays1 = 'date'+left;
 					var cDays2 = 'date'+right;
 					document.getElementById(cDays1).style.display = 'none';
-					document.getElementById(cDays2).style.display = 'table-
-
-cell';
+					document.getElementById(cDays2).style.display = 'table-cell';
 					}
 
 				}
@@ -48,9 +44,7 @@ function movedaysleft() 	{
 					{
 					var cDays1 = 'date'+left;
 					var cDays2 = 'date'+right;
-					document.getElementById(cDays1).style.display = 'table-
-
-cell';
+					document.getElementById(cDays1).style.display = 'table-cell';
 					document.getElementById(cDays2).style.display = 'none';
 					left = left - 1;
 					right = right - 1;
@@ -60,9 +54,7 @@ cell';
 					var cDays1 = 'date'+left;
 					var cDays2 = 'date'+right;
 
-					document.getElementById(cDays1).style.display = 'table-
-
-cell';
+					document.getElementById(cDays1).style.display = 'table-cell';
 					document.getElementById(cDays2).style.display = 'none';
 					}
 				}
@@ -104,288 +96,164 @@ cell';
 
 <table>
 	<tr>
-	<td>		<div name = "left">	<a href="javascript:movedaysleft();" ><img 
-
-src="http://img37.imageshack.us/img37/5295/leftarrowy.png"></a>          </div> 	</td>
-<td name="date0" id="date0" style="display: table-cell;">           <div id="day0" class="dates"> 
-
-            <a id="datetab0" href="javascript:choosedate('Tue-31-Jan');" >Jan<br/><strong><font 
-
-size="5">31<sup>st</sup></font></strong><br/>Tue</a>          </div> 	</td>
-<td name="date1" id="date1" style="display: table-cell;">           <div id="day1" class="dates"> 
-
-            <a id="datetab1" href="javascript:choosedate('Wed-01-Feb');" >Feb<br/><strong><font 
-
-size="5">1<sup>st</sup></font></strong><br/>Wed</a>          </div> 	</td>
-<td name="date2" id="date2" style="display: table-cell;">           <div id="day2" class="dates"> 
-
-            <a id="datetab2" href="javascript:choosedate('Thu-02-Feb');" >Feb<br/><strong><font 
-
-size="5">2<sup>nd</sup></font></strong><br/>Thu</a>          </div> 	</td>
-<td name="date3" id="date3" style="display: table-cell;">           <div id="day3" class="dates"> 
-
-            <a id="datetab3" href="javascript:choosedate('Fri-03-Feb');" >Feb<br/><strong><font 
-
-size="5">3<sup>rd</sup></font></strong><br/>Fri</a>          </div> 	</td>
-<td name="date4" id="date4" style="display: table-cell;">           <div id="day4" class="dates"> 
-
-            <a id="datetab4" href="javascript:choosedate('Sat-04-Feb');" >Feb<br/><strong><font 
-
-size="5">4<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
-<td name="date5" id="date5" style="display: table-cell;">           <div id="day5" class="dates"> 
-
-            <a id="datetab5" href="javascript:choosedate('Sun-05-Feb');" >Feb<br/><strong><font 
-
-size="5">5<sup>th</sup></font></strong><br/>Sun</a>          </div> 	</td>
-<td name="date6" id="date6" style="display: none;">           <div id="day6" class="dates">       
-
-      <a id="datetab6" href="javascript:choosedate('Mon-06-Feb');" >Feb<br/><strong><font 
-
-size="5">6<sup>th</sup></font></strong><br/>Mon</a>          </div> 	</td>
-<td name="date7" id="date7" style="display: none;">           <div id="day7" class="dates">       
-
-      <a id="datetab7" href="javascript:choosedate('Tue-07-Feb');" >Feb<br/><strong><font 
-
-size="5">7<sup>th</sup></font></strong><br/>Tue</a>          </div> 	</td>
-<td name="date8" id="date8" style="display: none;">           <div id="day8" class="dates">       
-
-      <a id="datetab8" href="javascript:choosedate('Wed-08-Feb');" >Feb<br/><strong><font 
-
-size="5">8<sup>th</sup></font></strong><br/>Wed</a>          </div> 	</td>
-<td name="date9" id="date9" style="display: none;">           <div id="day9" class="dates">       
-
-      <a id="datetab9" href="javascript:choosedate('Thu-09-Feb');" >Feb<br/><strong><font 
-
-size="5">9<sup>th</sup></font></strong><br/>Thu</a>          </div> 	</td>
-<td name="date10" id="date10" style="display: none;">           <div id="day10" class="dates">    
-
-         <a id="datetab10" href="javascript:choosedate('Sat-11-Feb');" >Feb<br/><strong><font 
-
-size="5">11<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
-	<td>		<div name = "right">	<a href="javascript:movedaysright();" ><img 
-
-src="http://img718.imageshack.us/img718/7069/rightarrowy.png"></a>          </div> 	</td>	
+	<td>		<div name = "left">	<a href="javascript:movedaysleft();" ><img src="http://img37.imageshack.us/img37/5295/leftarrowy.png"></a>          </div> 	</td>
+<td name="date0" id="date0" style="display: table-cell;">           <div id="day0" class="dates">             <a id="datetab0" href="javascript:choosedate('Tue-31-Jan');" >Jan<br/><strong><font size="5">31<sup>st</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date1" id="date1" style="display: table-cell;">           <div id="day1" class="dates">             <a id="datetab1" href="javascript:choosedate('Wed-01-Feb');" >Feb<br/><strong><font size="5">1<sup>st</sup></font></strong><br/>Wed</a>          </div> 	</td>
+<td name="date2" id="date2" style="display: table-cell;">           <div id="day2" class="dates">             <a id="datetab2" href="javascript:choosedate('Thu-02-Feb');" >Feb<br/><strong><font size="5">2<sup>nd</sup></font></strong><br/>Thu</a>          </div> 	</td>
+<td name="date3" id="date3" style="display: table-cell;">           <div id="day3" class="dates">             <a id="datetab3" href="javascript:choosedate('Fri-03-Feb');" >Feb<br/><strong><font size="5">3<sup>rd</sup></font></strong><br/>Fri</a>          </div> 	</td>
+<td name="date4" id="date4" style="display: table-cell;">           <div id="day4" class="dates">             <a id="datetab4" href="javascript:choosedate('Sat-04-Feb');" >Feb<br/><strong><font size="5">4<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
+<td name="date5" id="date5" style="display: table-cell;">           <div id="day5" class="dates">             <a id="datetab5" href="javascript:choosedate('Sun-05-Feb');" >Feb<br/><strong><font size="5">5<sup>th</sup></font></strong><br/>Sun</a>          </div> 	</td>
+<td name="date6" id="date6" style="display: none;">           <div id="day6" class="dates">             <a id="datetab6" href="javascript:choosedate('Mon-06-Feb');" >Feb<br/><strong><font size="5">6<sup>th</sup></font></strong><br/>Mon</a>          </div> 	</td>
+<td name="date7" id="date7" style="display: none;">           <div id="day7" class="dates">             <a id="datetab7" href="javascript:choosedate('Tue-07-Feb');" >Feb<br/><strong><font size="5">7<sup>th</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date8" id="date8" style="display: none;">           <div id="day8" class="dates">             <a id="datetab8" href="javascript:choosedate('Wed-08-Feb');" >Feb<br/><strong><font size="5">8<sup>th</sup></font></strong><br/>Wed</a>          </div> 	</td>
+<td name="date9" id="date9" style="display: none;">           <div id="day9" class="dates">             <a id="datetab9" href="javascript:choosedate('Thu-09-Feb');" >Feb<br/><strong><font size="5">9<sup>th</sup></font></strong><br/>Thu</a>          </div> 	</td>
+<td name="date10" id="date10" style="display: none;">           <div id="day10" class="dates">             <a id="datetab10" href="javascript:choosedate('Sat-11-Feb');" >Feb<br/><strong><font size="5">11<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
+	<td>		<div name = "right">	<a href="javascript:movedaysright();" ><img src="http://img718.imageshack.us/img718/7069/rightarrowy.png"></a>          </div> 	</td>	
 	</tr>
 </table>
 <div name="films" id="Tue-31-Jan" style="width: 500px; display: block;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26750">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26750">7:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" 
-
-alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>87 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26744">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26744">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" 
-
-alt="Goon">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
       <span class='cert'>16</span> 
       <span class='runtime'>91 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26751">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26751">8:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" 
-
-alt="Haywire">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>92 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26749">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26749">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" 
-
-alt="Sherlock Holmes: A Game of Shadows">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>128 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26752">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26752">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26745">8:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26745">8:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The 
-
-Iron Lady">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>104 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26746">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26747">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26746">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26747">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26743">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26742">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26743">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26742">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 31 Jan</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26748">8:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26748">8:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
@@ -393,244 +261,162 @@ s=ECLIPSEBD&p=tickets&perfCode=26748">8:00pm</a>
 </ul></div>
 <div name="films" id="Wed-01-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26565">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26565">7:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" 
-
-alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>87 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26562">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26562">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26584">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26582">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26584">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26582">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" 
-
-alt="Goon">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
       <span class='cert'>16</span> 
       <span class='runtime'>91 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26569">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26569">7:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" 
-
-alt="Haywire">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>92 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26568">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26568">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" 
-
-alt="Sherlock Holmes: A Game of Shadows">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>128 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26570">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26570">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26563">8:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26563">8:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The 
-
-Iron Lady">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>104 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26564">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26564">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26560">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26560">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 01 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26566">8:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26566">8:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
@@ -638,244 +424,162 @@ s=ECLIPSEBD&p=tickets&perfCode=26566">8:00pm</a>
 </ul></div>
 <div name="films" id="Thu-02-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26576">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26576">7:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" 
-
-alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>87 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26573">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26573">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26585">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26583">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26585">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26583">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" 
-
-alt="Goon">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7328.jpg" alt="Goon">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7328">Goon</a>
       <span class='cert'>16</span> 
       <span class='runtime'>91 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26580">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26580">7:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7328" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" 
-
-alt="Haywire">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>92 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26579">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26579">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" 
-
-alt="Sherlock Holmes: A Game of Shadows">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7121.jpg" alt="Sherlock Holmes: A Game of Shadows">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7121">Sherlock Holmes: A Game of Shadows</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>128 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26581">6:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26581">6:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7121" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26574">8:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26574">8:15pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The 
-
-Iron Lady">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7324.jpg" alt="The Iron Lady">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7324">The Iron Lady</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>104 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26575">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26575">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7324" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26571">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26571">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 02 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26577">8:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26577">8:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
@@ -883,265 +587,169 @@ s=ECLIPSEBD&p=tickets&perfCode=26577">8:00pm</a>
 </ul></div>
 <div name="films" id="Fri-03-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26764">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26764">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26766">7:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26769">11:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26766">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26769">11:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" 
-
-alt="Haywire">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>92 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26761">11:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26761">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26753">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26754">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26756">11:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26753">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26754">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26756">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26770">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26770">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26759">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26762">10:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26759">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26762">10:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26758">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26757">8:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26755">10:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26758">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26757">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26755">10:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26772">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26767">9:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26765">11:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26772">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26767">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26765">11:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26768">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26768">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 03 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26763">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26763">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -1149,400 +757,246 @@ s=ECLIPSEBD&p=tickets&perfCode=26763">8:20pm</a>
 </ul></div>
 <div name="films" id="Sat-04-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26649">12:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26648">2:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26647">4:20pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26650">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26649">12:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26648">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26647">4:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26650">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" 
-
-alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>87 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26642">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26643">1:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26642">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26643">1:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26655">5:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26651">7:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26652">11:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26655">5:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26651">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26652">11:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7119">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" 
-
-alt="Happy Feet Two 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" alt="Happy Feet Two 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7119">Happy Feet Two 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">Happy Feet Two 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>104 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26656">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26656">12:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7119" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" 
-
-alt="Haywire">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7339.jpg" alt="Haywire">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7339">Haywire</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>92 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26662">11:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26662">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7339" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6983">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" 
-
-alt="Hugo 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" alt="Hugo 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6983">Hugo 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">Hugo 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>125 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26635">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26739">2:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26635">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26739">2:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6983" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26631">12:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26629">2:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26627">4:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26626">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26628">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26632">11:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26631">12:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26629">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26627">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26626">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26628">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26632">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26664">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26663">2:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26660">4:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26661">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26664">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26663">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26660">4:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26661">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26639">8:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26638">10:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26639">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26638">10:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6984">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" 
-
-alt="Puss in Boots 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">Puss in Boots 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>100 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26637">3:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26637">3:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26741">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26633">8:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26630">10:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26741">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26633">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26630">10:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26653">9:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26644">11:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26653">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26644">11:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26654">2:40pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26640">5:40pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26740">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26654">2:40pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26640">5:40pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26740">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 04 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26645">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26645">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -1550,361 +1004,225 @@ s=ECLIPSEBD&p=tickets&perfCode=26645">8:20pm</a>
 </ul></div>
 <div name="films" id="Sun-05-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26813">12:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26812">2:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26811">4:20pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26814">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26813">12:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26812">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26811">4:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26814">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" 
-
-alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6904.jpg" alt="Alvin and the Chipmunks: Chip-Wrecked 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6904">Alvin and the Chipmunks: Chip-Wrecked 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>87 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26801">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26802">1:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26801">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26802">1:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6904" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26818">5:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26816">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26818">5:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26816">7:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7119">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" 
-
-alt="Happy Feet Two 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7119.jpg" alt="Happy Feet Two 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7119">Happy Feet Two 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7119">Happy Feet Two 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>104 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26819">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26819">12:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7119" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6983">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" 
-
-alt="Hugo 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6983.jpg" alt="Hugo 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6983">Hugo 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6983">Hugo 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>125 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26804">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26820">2:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26804">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26820">2:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6983" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26797">12:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26796">2:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26795">4:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26792">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26793">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26797">12:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26796">2:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26795">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26792">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26793">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26826">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26825">2:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26823">4:10pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26824">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26826">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26825">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26823">4:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26824">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26805">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26805">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6984">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" 
-
-alt="Puss in Boots 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/6984.jpg" alt="Puss in Boots 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=6984">Puss in Boots 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=6984">Puss in Boots 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>100 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26800">3:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26800">3:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/6984" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26803">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26799">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26803">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26799">8:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26817">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26817">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26807">2:40pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26806">5:40pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26821">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26807">2:40pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26806">5:40pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26821">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Sunday 05 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26810">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26810">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -1912,226 +1230,148 @@ s=ECLIPSEBD&p=tickets&perfCode=26810">8:20pm</a>
 </ul></div>
 <div name="films" id="Mon-06-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26783">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26783">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26785">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26785">7:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26773">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26775">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26773">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26775">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26789">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26789">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26779">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26779">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26778">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26776">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26778">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26776">8:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26863">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26787">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26863">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26787">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26788">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26788">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Monday 06 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26784">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26784">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -2139,226 +1379,148 @@ s=ECLIPSEBD&p=tickets&perfCode=26784">8:20pm</a>
 </ul></div>
 <div name="films" id="Tue-07-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26871">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26871">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26872">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26872">7:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26864">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26865">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26864">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26865">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26875">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26875">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26869">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26869">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26867">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26866">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26867">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26866">8:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26868">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26873">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26868">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26873">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26874">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26874">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Tuesday 07 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26870">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26870">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -2366,226 +1528,148 @@ s=ECLIPSEBD&p=tickets&perfCode=26870">8:20pm</a>
 </ul></div>
 <div name="films" id="Wed-08-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26883">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26883">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26884">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26884">7:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26876">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26877">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26876">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26877">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26887">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26887">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26881">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26881">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26879">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26878">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26879">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26878">8:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26880">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26885">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26880">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26885">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26886">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26886">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Wednesday 08 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26882">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26882">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -2593,226 +1677,148 @@ s=ECLIPSEBD&p=tickets&perfCode=26882">8:20pm</a>
 </ul></div>
 <div name="films" id="Thu-09-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A 
-
-Monster in Paris 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7355.jpg" alt="A Monster in Paris 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7355">A Monster in Paris 2D</a>
       <span class='cert'>G</span> 
       <span class='runtime'>89 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26895">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26895">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7355" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" 
-
-alt="Chronicle">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7485.jpg" alt="Chronicle">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7485">Chronicle</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>83 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26896">7:10pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26896">7:10pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7485" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26888">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26889">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26888">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26889">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" 
-
-alt="Journey 2 The Mysterious Island 2D">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7368.jpg" alt="Journey 2 The Mysterious Island 2D">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7368">Journey 2 The Mysterious Island 2D</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>94 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26899">6:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26899">6:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7368" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man 
-
-on a Ledge">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7365.jpg" alt="Man on a Ledge">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7365">Man on a Ledge</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>102 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26893">8:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26893">8:45pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7365" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The 
-
-Grey">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7354.jpg" alt="The Grey">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7354">The Grey</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>117 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26891">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26890">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26891">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26890">8:30pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7354" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The 
-
-Sitter">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7401.jpg" alt="The Sitter">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7401">The Sitter</a>
       <span class='cert'>15A</span> 
       <span class='runtime'>81 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26892">6:45pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26897">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26892">6:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26897">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7401" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War 
-
-Horse">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7329.jpg" alt="War Horse">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7329">War Horse</a>
       <span class='cert'>12A</span> 
       <span class='runtime'>146 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26898">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26898">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7329" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" 
-
-alt="WE">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7340.jpg" alt="WE">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7340">WE</a>
       <span class='cert'>16</span> 
       <span class='runtime'>119 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Thursday 09 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26894">8:20pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26894">8:20pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7340" class="readMore">Read more about this film</a>
@@ -2820,31 +1826,19 @@ s=ECLIPSEBD&p=tickets&perfCode=26894">8:20pm</a>
 </ul></div>
 <div name="films" id="Fri-10-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=LIFFORDCP&p=details&eventCode=7367">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7367.jpg" alt="The 
-
-Muppets">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7367">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7367.jpg" alt="The Muppets">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=LIFFORDCP&p=details&eventCode=7367">The Muppets</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7367">The Muppets</a>
       <span class='cert'>G</span> 
       <span class='runtime'>109 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Friday 10 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=LIFFORDCP&p=tickets&perfCode=48668">6:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=LIFFORDCP&p=tickets&perfCode=48666">8:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=LIFFORDCP&p=tickets&perfCode=48667">11:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=48668">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=48666">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=48667">11:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7367" class="readMore">Read more about this film</a>
@@ -2855,61 +1849,37 @@ s=LIFFORDCP&p=tickets&perfCode=48667">11:00pm</a>
 </ul></div>
 <div name="films" id="Sat-11-Feb" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" 
-
-alt="Jack and Jill">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7364.jpg" alt="Jack and Jill">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7364">Jack and Jill</a>
       <span class='cert'>PG</span> 
       <span class='runtime'>90 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 11 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26689">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26689">9:00pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7364" class="readMore">Read more about this film</a>
 </li>
   <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7367">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7367.jpg" alt="The 
-
-Muppets">
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7367">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7367.jpg" alt="The Muppets">
     </a>  
     <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=details&eventCode=7367">The Muppets</a>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=details&eventCode=7367">The Muppets</a>
       <span class='cert'>G</span> 
       <span class='runtime'>109 mins</span>
     </h5>
     <ul class="filmTimes">
 <li><span class="dateName">Saturday 11 Feb</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26719">12:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26722">2:00pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26720">4:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26723">6:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?
-
-s=ECLIPSEBD&p=tickets&perfCode=26721">8:50pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26719">12:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26722">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26720">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26723">6:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=ECLIPSEBD&p=tickets&perfCode=26721">8:50pm</a>
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/7367" class="readMore">Read more about this film</a>
