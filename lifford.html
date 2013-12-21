@@ -5,7 +5,7 @@
 
 var left=0;
 var right=6;
-var cdate="Fri-20-Dec";
+var cdate="Sat-21-Dec";
 
 function choosedate(thisdate) {
 				document.getElementById(cdate).style.display = 'none';
@@ -16,7 +16,7 @@ function choosedate(thisdate) {
 
 function movedaysright() 	{
 				if(right < 
-6
+11
 )
 					{
 					var cDays1 = 'date'+left;
@@ -94,118 +94,22 @@ function movedaysleft() 	{
 		text-decoration: underline;
  		}
 </style>
-<td name="date0" id="date0" style="display: table-cell;">           <div id="day0" class="dates">             <a id="datetab0" href="javascript:choosedate('Fri-20-Dec');" >Dec<br/><strong><font size="5">20<sup>th</sup></font></strong><br/>Fri</a>          </div> 	</td>
-<td name="date1" id="date1" style="display: table-cell;">           <div id="day1" class="dates">             <a id="datetab1" href="javascript:choosedate('Sat-21-Dec');" >Dec<br/><strong><font size="5">21<sup>st</sup></font></strong><br/>Sat</a>          </div> 	</td>
-<td name="date2" id="date2" style="display: table-cell;">           <div id="day2" class="dates">             <a id="datetab2" href="javascript:choosedate('Sun-22-Dec');" >Dec<br/><strong><font size="5">22<sup>nd</sup></font></strong><br/>Sun</a>          </div> 	</td>
-<td name="date3" id="date3" style="display: table-cell;">           <div id="day3" class="dates">             <a id="datetab3" href="javascript:choosedate('Mon-23-Dec');" >Dec<br/><strong><font size="5">23<sup>rd</sup></font></strong><br/>Mon</a>          </div> 	</td>
-<td name="date4" id="date4" style="display: table-cell;">           <div id="day4" class="dates">             <a id="datetab4" href="javascript:choosedate('Tue-24-Dec');" >Dec<br/><strong><font size="5">24<sup>th</sup></font></strong><br/>Tue</a>          </div> 	</td>
-<td name="date5" id="date5" style="display: table-cell;">           <div id="day5" class="dates">             <a id="datetab5" href="javascript:choosedate('Thu-26-Dec');" >Dec<br/><strong><font size="5">26<sup>th</sup></font></strong><br/>Thu</a>          </div> 	</td>
+<td name="date0" id="date0" style="display: table-cell;">           <div id="day0" class="dates">             <a id="datetab0" href="javascript:choosedate('Sat-21-Dec');" >Dec<br/><strong><font size="5">21<sup>st</sup></font></strong><br/>Sat</a>          </div> 	</td>
+<td name="date1" id="date1" style="display: table-cell;">           <div id="day1" class="dates">             <a id="datetab1" href="javascript:choosedate('Sun-22-Dec');" >Dec<br/><strong><font size="5">22<sup>nd</sup></font></strong><br/>Sun</a>          </div> 	</td>
+<td name="date2" id="date2" style="display: table-cell;">           <div id="day2" class="dates">             <a id="datetab2" href="javascript:choosedate('Mon-23-Dec');" >Dec<br/><strong><font size="5">23<sup>rd</sup></font></strong><br/>Mon</a>          </div> 	</td>
+<td name="date3" id="date3" style="display: table-cell;">           <div id="day3" class="dates">             <a id="datetab3" href="javascript:choosedate('Tue-24-Dec');" >Dec<br/><strong><font size="5">24<sup>th</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date4" id="date4" style="display: table-cell;">           <div id="day4" class="dates">             <a id="datetab4" href="javascript:choosedate('Thu-26-Dec');" >Dec<br/><strong><font size="5">26<sup>th</sup></font></strong><br/>Thu</a>          </div> 	</td>
+<td name="date5" id="date5" style="display: table-cell;">           <div id="day5" class="dates">             <a id="datetab5" href="javascript:choosedate('Fri-27-Dec');" >Dec<br/><strong><font size="5">27<sup>th</sup></font></strong><br/>Fri</a>          </div> 	</td>
 <td name="date6" id="date6" style="display: none;">           <div id="day6" class="dates">             <a id="datetab6" href="javascript:choosedate('Sat-28-Dec');" >Dec<br/><strong><font size="5">28<sup>th</sup></font></strong><br/>Sat</a>          </div> 	</td>
+<td name="date7" id="date7" style="display: none;">           <div id="day7" class="dates">             <a id="datetab7" href="javascript:choosedate('Sun-29-Dec');" >Dec<br/><strong><font size="5">29<sup>th</sup></font></strong><br/>Sun</a>          </div> 	</td>
+<td name="date8" id="date8" style="display: none;">           <div id="day8" class="dates">             <a id="datetab8" href="javascript:choosedate('Mon-30-Dec');" >Dec<br/><strong><font size="5">30<sup>th</sup></font></strong><br/>Mon</a>          </div> 	</td>
+<td name="date9" id="date9" style="display: none;">           <div id="day9" class="dates">             <a id="datetab9" href="javascript:choosedate('Tue-31-Dec');" >Dec<br/><strong><font size="5">31<sup>st</sup></font></strong><br/>Tue</a>          </div> 	</td>
+<td name="date10" id="date10" style="display: none;">           <div id="day10" class="dates">             <a id="datetab10" href="javascript:choosedate('Wed-01-Jan');" >Jan<br/><strong><font size="5">1<sup>st</sup></font></strong><br/>Wed</a>          </div> 	</td>
+<td name="date11" id="date11" style="display: none;">           <div id="day11" class="dates">             <a id="datetab11" href="javascript:choosedate('Thu-02-Jan');" >Jan<br/><strong><font size="5">2<sup>nd</sup></font></strong><br/>Thu</a>          </div> 	</td>
 	<td>		<div name = "right">	<a href="javascript:movedaysright();" ><img src="http://img718.imageshack.us/img718/7069/rightarrowy.png"></a>          </div> 	</td>	
 	</tr>
 </table>
-<div name="films" id="Fri-20-Dec" style="width: 500px; display: block;"><ul id="cinematickets">
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
-      <span class='cert'>15A</span> 
-      <span class='runtime'>119 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66278">8:15pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66281">11:00pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
-</li>
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11382">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11382.jpg" alt="Homefront">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11382">Homefront</a>
-      <span class='cert'>16</span> 
-      <span class='runtime'>100 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66688">8:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66689">11:00pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/11382" class="readMore">Read more about this film</a>
-</li>
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
-      <span class='cert'>PG</span> 
-      <span class='runtime'>88 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66681">8:30pm</a>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66682">11:00pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
-</li>
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
-      <span class='cert'>12A</span> 
-      <span class='runtime'>161 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66638">8:45pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
-</li>
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10298">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10298.jpg" alt="The Hunger Games: Catching Fire">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10298">The Hunger Games: Catching Fire</a>
-      <span class='cert'>12A</span> 
-      <span class='runtime'>146 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66677">10:45pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/10298" class="readMore">Read more about this film</a>
-</li>
-  <li>
-    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">
-      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11450.jpg" alt="Walking with Dinosaurs 3D">
-    </a>  
-    <h5>
-      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">Walking with Dinosaurs 3D</a>
-      <span class='cert'>PG</span> 
-      <span class='runtime'>87 mins</span>
-    </h5>
-    <ul class="filmTimes">
-<li><span class="dateName">Friday 20 Dec</span>
-<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66679">8:45pm</a>
-</li>
-</ul>
-<a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
-</li>
-</ul></div>
-<div name="films" id="Sat-21-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
+<div name="films" id="Sat-21-Dec" style="width: 500px; display: block;"><ul id="cinematickets">
   <li>
     <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
       <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
@@ -1323,6 +1227,246 @@ function movedaysleft() 	{
 <a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
 </li>
 </ul></div>
+<div name="films" id="Fri-27-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66734">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66733">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66732">10:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66731">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66722">3:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66725">8:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66726">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10295.jpg" alt="Cloudy with a Chance of Meatballs 2 (2D) ">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">Cloudy with a Chance of Meatballs 2 (2D) </a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66730">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10295" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11539.jpg" alt="Free Birds 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">Free Birds 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66746">2:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11539" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66728">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66735">3:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66727">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/642.jpg" alt="Mary Poppins">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">Mary Poppins</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>154 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66744">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/642" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66724">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66729">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66742">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66745">4:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66740">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66741">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66743">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66736">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66721">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66719">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66720">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10294.jpg" alt="Turbo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">Turbo 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66723">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10294" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66737">3:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11450.jpg" alt="Walking with Dinosaurs 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">Walking with Dinosaurs 3D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Friday 27 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66738">5:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66739">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
 <div name="films" id="Sat-28-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
   <li>
     <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
@@ -1561,5 +1705,1087 @@ function movedaysleft() 	{
 </li>
 </ul>
 <a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Sun-29-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66861">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66858">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66860">10:40pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66859">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66847">3:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66855">8:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66852">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10295.jpg" alt="Cloudy with a Chance of Meatballs 2 (2D) ">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">Cloudy with a Chance of Meatballs 2 (2D) </a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66854">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10295" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11539.jpg" alt="Free Birds 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">Free Birds 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66873">2:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11539" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66853">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66862">3:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66856">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/642.jpg" alt="Mary Poppins">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">Mary Poppins</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>154 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66871">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/642" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66848">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66857">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66869">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66872">4:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66867">9:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66868">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66870">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66863">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66850">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66849">8:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66846">11:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10294.jpg" alt="Turbo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">Turbo 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66851">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10294" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66864">3:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11450.jpg" alt="Walking with Dinosaurs 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">Walking with Dinosaurs 3D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Sunday 29 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66865">5:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66866">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Mon-30-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66889">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66886">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66887">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66875">3:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66883">8:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10295.jpg" alt="Cloudy with a Chance of Meatballs 2 (2D) ">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">Cloudy with a Chance of Meatballs 2 (2D) </a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66882">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10295" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11539.jpg" alt="Free Birds 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">Free Birds 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66901">2:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11539" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66881">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66890">3:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66884">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/642.jpg" alt="Mary Poppins">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=642">Mary Poppins</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>154 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66899">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/642" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66876">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66885">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66897">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66900">4:45pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66895">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66898">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66891">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66878">6:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66877">8:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10294.jpg" alt="Turbo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">Turbo 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66879">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10294" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66892">3:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11450.jpg" alt="Walking with Dinosaurs 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">Walking with Dinosaurs 3D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Monday 30 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66893">5:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66894">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Tue-31-Dec" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66762">1:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66759">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66750">3:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10295.jpg" alt="Cloudy with a Chance of Meatballs 2 (2D) ">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10295">Cloudy with a Chance of Meatballs 2 (2D) </a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66758">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10295" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66756">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66763">3:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66755">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66752">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66757">4:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66770">6:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66773">4:45pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66796">1:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66764">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66749">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10294.jpg" alt="Turbo 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10294">Turbo 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>90 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66751">12:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10294" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66765">3:15pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11450.jpg" alt="Walking with Dinosaurs 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11450">Walking with Dinosaurs 3D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Tuesday 31 Dec</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66766">5:15pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66767">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11450" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Wed-01-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66786">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66783">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66785">3:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11353.jpg" alt="American Hustle">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11353">American Hustle</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>138 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66781">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66780">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66779">8:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66791">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11539.jpg" alt="Free Birds 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">Free Birds 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66795">1:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11539" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66790">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66782">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66778">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66792">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10721">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10721.jpg" alt="Paranormal Activity 5">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10721">Paranormal Activity 5</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>84 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66777">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66776">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66775">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10721" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66788">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66784">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66789">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66787">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Wednesday 01 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66794">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66793">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
+</li>
+</ul></div>
+<div name="films" id="Thu-02-Jan" style="width: 500px; display: none;"><ul id="cinematickets">
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/7108.jpg" alt="47 Ronin 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=7108">47 Ronin 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66808">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66805">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/7108" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11592.jpg" alt="47 Ronin 3D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11592">47 Ronin 3D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66806">3:30pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11592" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11353">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11353.jpg" alt="American Hustle">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11353">American Hustle</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>138 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66803">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66804">5:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66802">8:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11353" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11352.jpg" alt="Anchorman 2: The Legend Continues">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11352">Anchorman 2: The Legend Continues</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>119 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66813">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11352" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11539.jpg" alt="Free Birds 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11539">Free Birds 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>91 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66817">1:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11539" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11445.jpg" alt="Frozen 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11445">Frozen 2D</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>108 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66812">2:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66801">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11445" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10944.jpg" alt="Moshi Monsters: The Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10944">Moshi Monsters: The Movie</a>
+      <span class='cert'>G</span> 
+      <span class='runtime'>81 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66800">1:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66814">5:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10944" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10721">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/10721.jpg" alt="Paranormal Activity 5">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=10721">Paranormal Activity 5</a>
+      <span class='cert'>15A</span> 
+      <span class='runtime'>84 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66798">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66799">7:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66797">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/10721" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11442.jpg" alt="The Harry Hill Movie">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11442">The Harry Hill Movie</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>88 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66810">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11442" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11350.jpg" alt="The Hobbit: The Desolation of Smaug 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11350">The Hobbit: The Desolation of Smaug 2D</a>
+      <span class='cert'>12A</span> 
+      <span class='runtime'>161 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66807">6:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11350" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11363.jpg" alt="The Secret Life of Walter Mitty">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11363">The Secret Life of Walter Mitty</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>115 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66811">4:30pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66809">9:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11363" class="readMore">Read more about this film</a>
+</li>
+  <li>
+    <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">
+      <img width="90" src="http://www.onlinecinematickets.com/filmimages/small/11499.jpg" alt="Walking with Dinosaurs 2D">
+    </a>  
+    <h5>
+      <a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=details&eventCode=11499">Walking with Dinosaurs 2D</a>
+      <span class='cert'>PG</span> 
+      <span class='runtime'>87 mins</span>
+    </h5>
+    <ul class="filmTimes">
+<li><span class="dateName">Thursday 02 Jan</span>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66816">3:00pm</a>
+<a target="_blank" href="http://www.onlinecinematickets.com/index.php?s=LIFFORDCP&p=tickets&perfCode=66815">7:00pm</a>
+</li>
+</ul>
+<a target="_blank" href="/info/display+film/11499" class="readMore">Read more about this film</a>
 </li>
 </ul></div>
