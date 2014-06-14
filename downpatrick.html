@@ -1,30 +1,37 @@
 <!--Scripting and code provided by Paul Burke based on html code for film times provided by Admit-One-->
 
 
+<
+<script type="text/javascript" src="http://resources.thefilmdb.co.uk/js/jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript">
 
 var left=0;
 var right=6;
-var cdate="Thu-05-Jun";
 
 function choosedate(thisdate) {
-				document.getElementById(cdate).style.display = 'none';
-				document.getElementById(thisdate).style.display = 'block';
-				cdate = thisdate;
+     $('div[name|="films"]').each(function(index) {
+          if ($(this).attr("id") == thisdate) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
 }
-
 
 function movedaysright() 	{
 				if(right < 
-14
+12
 )
 					{
 					var cDays1 = 'date'+left;
 					var cDays2 = 'date'+right;
-	
+
 					document.getElementById(cDays1).style.display = 'none';
 					document.getElementById(cDays2).style.display = 'table-cell';
-	
+
 					left = left + 1;
 					right = right + 1;
 					}
@@ -53,7 +60,7 @@ function movedaysleft() 	{
 					{
 					var cDays1 = 'date'+left;
 					var cDays2 = 'date'+right;
-	
+
 					document.getElementById(cDays1).style.display = 'table-cell';
 					document.getElementById(cDays2).style.display = 'none';
 					}
@@ -62,7 +69,6 @@ function movedaysleft() 	{
 
 
 </script>
-
    
 <style>
 #cinematickets 	{list-style:none; margin:0; padding:0}
